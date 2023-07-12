@@ -37,6 +37,5 @@ console.log(getStringLen());
 console.log(getStringLen("123123"));
 
 let elem = null;
-
 let value = elem?.value;
 console.log(value);
