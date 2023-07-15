@@ -40,3 +40,10 @@ let elem = null;
 let value = elem?.value;
 
 console.log(value);
+
+console.log(parseFloat("12.20"));
+
+console.log(typeof +"1");
+console.log(typeof ("1" * 1));
+
+if (!!{}) console.log("11111");
