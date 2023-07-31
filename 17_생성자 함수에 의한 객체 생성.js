@@ -6,6 +6,24 @@ person.sayHello = function () {
 console.log(person);
 person.sayHello();
 
+const circleA = {
+  radius: 5,
+  getDiameter() {
+    return 2 * this.radius;
+  },
+};
+
+console.log(circleA.getDiameter());
+
+const circleB = {
+  radius: 5,
+  getDiameter() {
+    return 2 * this.radius;
+  },
+};
+
+console.log(circleB.getDiameter());
+
 function Circle(radius) {
   this.radius = radius;
   this.getDiamer = function () {
