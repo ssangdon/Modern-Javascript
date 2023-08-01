@@ -32,4 +32,22 @@ const obj = {};
 const parent = { x: 1 };
 console.log(obj.__proto__);
 obj.__proto__ = parent;
-console.log(obj);
+console.dir(obj);
+
+// function Circle(radius) {
+//   this.radius = radius;
+//   this.getArea = function () {
+//     return Math.PI * this.radius ** 2;
+//   };
+// }
+// const circle1 = new Circle(5);
+// const circle2 = new Circle(10);
+// console.log(circle1.getArea === circle2.getArea);
+// console.log(circle1.getArea());
+// console.log(circle2.getArea());
+
+const person = { name: "Lee" };
+console.log(person.hasOwnProperty("__proto__")); // false
+
+console.log(Object.getOwnPropertyDescriptor(Object.prototype, "__proto__")); // false
+console.log({}.__proto__ === Object.prototype);
