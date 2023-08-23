@@ -61,3 +61,14 @@ const you = new Person("rk", 20);
 me.sayHi();
 you.sayHi();
 me.sayHi();
+
+const x2 = 1;
+function outer() {
+  const x2 = 10;
+  const inner = function () {
+    console.log(x2);
+  };
+  return inner;
+}
+const innerFunc2 = outer();
+innerFunc2();
